@@ -7,6 +7,13 @@ import skimage.measure
 import cv2
 import numpy
 
+pMyDirectory = "PResult/"
+pVanyaDirectory = "PVanya/"
+
+
+vMyDirectory = "VResult/"
+vVanyaDirectory = "VVanya/"
+
 def compute_psnr(img1, img2): #- разница в шуме в дцбелах? 0 - similar
     return cv2.PSNR(img1, img2)
 
@@ -24,12 +31,6 @@ def mse(imageA, imageB): # - 0 сходство - проверяет интен�
 #SSIM - -1 до 1, 1-индеалное сходство, работает по окнам, а не по всему излоюражению
 
 myImagePostfix = "_ne4x"
-pMyDirectory = "PResult/"
-pVanyaDirectory = "PVanya/"
-
-
-vMyDirectory = "VResult/"
-vVanyaDirectory = "VVanya/"
 
 pSize = 773
 vSize = 563
